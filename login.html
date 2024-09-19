@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- document type (HTML5) -->
+<html lang="en"> <!-- Starts the HTML document and sets the language to English -->
+<head>
+    <meta charset="UTF-8"> <!-- character encoding to UTF-8, text display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title> <!-- Title of the webpage -->
+</head>
+<body>
+    <header>
+        <h1>Login</h1> <!-- Main heading for the login page -->
+        <nav>
+            <a href="index.html">Back</a> <!-- Link to the main page -->
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form action="/login" method="POST"> <!-- Form for user login, submitting to the /login endpoint -->
+                <div>
+                    <label for="username">Username:</label> <!-- Label for the username input -->
+                    <input type="text" id="username" name="username" required> <!-- Input field for username, required -->
+                </div>
+                <div>
+                    <label for="email">Email:</label> <!-- Label for the email input -->
+                    <input type="email" id="email" name="email" required> <!-- Input field for email, required -->
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label> <!-- Label for the phone number input -->
+                    <input type="tel" id="phone" name="phone" required> <!-- Input field for phone number, required -->
+                </div>
+                <div>
+                    <label for="password">Password:</label> <!-- Label for the password input -->
+                    <input type="password" id="password" name="password" required> <!-- Input field for password, required -->
+                </div>
+                <div>
+                    <label for="profile-pic">Upload Profile Picture:</label> <!-- Label for profile picture upload -->
+                    <input type="file" id="profile-pic" name="profile-pic"> <!-- Input field for file upload -->
+                </div>
+                <div>
+                    <button type="submit">Login</button> <!-- Submit button for the form -->
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p> <!-- Footer with copyright information -->
+    </footer>
+</body>
+</html>
